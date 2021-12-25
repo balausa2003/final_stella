@@ -10,6 +10,7 @@
     background-size: cover;
 
 }
+
 .header{
     text-align: center;
     margin-top: -10px;
@@ -850,23 +851,100 @@
 
 /* Here is the code for Responsive Footer */
 /* You can remove below code if you don't want Footer to be responsive */
+.nav{
+  display: none;
+
+}
+.nav label{
+   font-size: 45px;
+   
+}
+#toggle{
+    display: none;
+}
 
 
 
-@media(max-width:500px){
- 
-  .header{
-    visibility: hidden;
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header1 li {
+      text-align: center;
   }
-  body{
-    margin-top: -55px;
+  .header1 a {
+      background-color: rgb(139, 25, 25);
+      padding: 20px 30px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .header1 .menu {
+      color: white;
+      background-color: rgb(139, 25, 25);
+  }
+  .header1 .menu-icon {
+      color: white;
+      background-color: rgb(139, 25, 25);
+  }
+}
+@media(max-width:500px){
+  #toggle:checked + .main_header {
+   display: none;
+   transition: display,0.3s;
+    
+}
+body{
+  margin-top: -50px;
+}
+
+  .nav {
+    display: block;
+     cursor: pointer;
+     margin-top: 10px;
+     margin-left: -420px;
+     color: #000;
+ }
+.main_header{
+ margin-top: -65px;
+ margin-left: -0.5px;
+
+}
+.main_header li{
+ padding: 16px;
+  background-color:  rgb(139, 25, 25);
+}
+  .main_header a{
+  
+    font-size: 14px;
+    transition: font-size,0.3s;
+  }
+  
+  .main_header ul{
+    
+    display: inline;
+    justify-content: space-evenly;
+    
+    
+   
+  }
+  
+  .header{
+  
+    visibility: hidden;
   }
   .fone{
    width: 482px;
+   height:950px
+  
+  }
+  .second{
+    
+    background-attachment:scroll;
   }
 
 .fone_2 img{
-  opacity: 0;
+
+  width: 100px;
+  margin-left: 200px;
+  visibility: hidden;
 }
 .logo{
   margin-top: 125px;
@@ -913,6 +991,7 @@
 .third{
   margin-top: -500px;
   width: 482px;
+  
 }
 .third_text{
   margin-top:-100%;
@@ -936,14 +1015,15 @@
 .items .item{
   height: 190px;
   width: 190px;
-  margin-top: -200px;
+  margin-top: 20px;
 }
 .button{
-  margin-top: -200px;
+  margin-top: 20px;
 }
 .chef{
   height: 600px;
   width: 482px;
+  margin-top: 120px;
 }
 .list{
   height: 200px;
@@ -954,6 +1034,7 @@
 }
 .menus{
   height: 700px;
+
 }
 .col-sm-7 h2{
   font-size: 50px;
